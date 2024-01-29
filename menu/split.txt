@@ -1,0 +1,4 @@
+[Menu]
+1. Hit
+2. Stand
+3. Help
