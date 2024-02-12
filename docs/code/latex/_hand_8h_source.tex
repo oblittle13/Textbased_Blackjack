@@ -1,0 +1,55 @@
+\doxysection{Hand.\+h}
+\hypertarget{_hand_8h_source}{}\label{_hand_8h_source}\index{include/Hand.h@{include/Hand.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ INCLUDE\_HAND\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INCLUDE\_HAND\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Card.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_hand}{Hand}}\ \{}
+\DoxyCodeLine{00009\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_hand_aa733faf150351c640fc7d1bf460b07e9}{Hand}}()\ :}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ stand(false),}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ score(0)\ \{\}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_hand_afb5ce3d55bcf06a64e00944066242e73}{Hand}}(std::vector<Card*>\ cards)\ :}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ cards(cards),}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ stand(false)\ \{\}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_hand_a6f907924e4d609201bf26a7e77e1c74f}{\string~Hand}}()\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_card}{Card}}*\ card\ :\ cards)}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ card;}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<Card*>\ \mbox{\hyperlink{class_hand_a7bb91f29afecdeb1896423269bb9a546}{getCards}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hand_abc208a6484b462b95859fe0bb4812ce8}{addCard}}(\mbox{\hyperlink{class_card}{Card}}*\ card);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_card}{Card}}*\ \mbox{\hyperlink{class_hand_afb089bf1b9f004f84e21fb9ae86f3d1c}{removeCard}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_hand_a273480acceedc23f7167e603f001710d}{getScore}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hand_aa15f0ccd4287476b1c6604edffe799a4}{resetHand}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hand_a4e18d03b424ac10f825a29744f05a4ec}{setScore}}(\textcolor{keywordtype}{int}\ s);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hand_a63de2dc427d247846def7237d46d8c30}{setFinished}}(\textcolor{keywordtype}{bool}\ s);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_hand_a7c310ceb965cddb4ad67fd0225eb4b54}{getFinished}}();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_hand_abd15e5110f6a2f0809e2064c808a829c}{getSize}}();}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_hand_ada8b2470b70bbd02af49b6439d93232a}{isSplittable}}();}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00093\ \ \ \ \ std::vector<Card*>\ cards;\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{int}\ score;\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{bool}\ stand;\ }
+\DoxyCodeLine{00096\ \};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INCLUDE\_HAND\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

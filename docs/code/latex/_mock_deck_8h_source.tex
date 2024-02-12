@@ -1,0 +1,22 @@
+\doxysection{Mock\+Deck.\+h}
+\hypertarget{_mock_deck_8h_source}{}\label{_mock_deck_8h_source}\index{test/MockDeck.h@{test/MockDeck.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MOCKDECK\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MOCKDECK\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Deck.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mock_deck}{MockDeck}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_deck}{Deck}}\ \{}
+\DoxyCodeLine{00007\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_mock_deck}{MockDeck}}()\ \{\}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_mock_deck}{\string~MockDeck}}()\ \{\}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}{shuffle}},\ \textcolor{keywordtype}{void}());}
+\DoxyCodeLine{00012\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_deck_a9074661e1f336e536a1d4ce76feced3a}{dealCard}},\ \mbox{\hyperlink{class_card}{Card}}*());}
+\DoxyCodeLine{00013\ \ \ \ \ MOCK\_METHOD1(\mbox{\hyperlink{class_deck_a0251bfdd3bb8fd58ee40b67429567dd9}{addCard}},\ \textcolor{keywordtype}{void}(\mbox{\hyperlink{class_card}{Card}}\ card));}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

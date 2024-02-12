@@ -1,0 +1,28 @@
+\doxysection{Mock\+Hand.\+h}
+\hypertarget{_mock_hand_8h_source}{}\label{_mock_hand_8h_source}\index{test/MockHand.h@{test/MockHand.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MOCKHAND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MOCKHAND\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Hand.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mock_hand}{MockHand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_hand}{Hand}}\ \{}
+\DoxyCodeLine{00009\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_mock_hand}{MockHand}}()\ \{\}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_mock_hand}{\string~MockHand}}()\ \{\}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_hand_a7bb91f29afecdeb1896423269bb9a546}{getCards}},\ std::vector<Card*>());}
+\DoxyCodeLine{00014\ \ \ \ \ MOCK\_METHOD1(\mbox{\hyperlink{class_hand_abc208a6484b462b95859fe0bb4812ce8}{addCard}},\ \textcolor{keywordtype}{void}(\mbox{\hyperlink{class_card}{Card}}\ *\ card));}
+\DoxyCodeLine{00015\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_hand_afb089bf1b9f004f84e21fb9ae86f3d1c}{removeCard}},\ \mbox{\hyperlink{class_card}{Card}}*());}
+\DoxyCodeLine{00016\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_hand_a273480acceedc23f7167e603f001710d}{getScore}},\ \textcolor{keywordtype}{int}());}
+\DoxyCodeLine{00017\ \ \ \ \ MOCK\_METHOD1(\mbox{\hyperlink{class_hand_a4e18d03b424ac10f825a29744f05a4ec}{setScore}},\ \textcolor{keywordtype}{void}(\textcolor{keywordtype}{int}\ num));}
+\DoxyCodeLine{00018\ \ \ \ \ MOCK\_METHOD1(\mbox{\hyperlink{class_hand_a63de2dc427d247846def7237d46d8c30}{setFinished}},\ \textcolor{keywordtype}{void}(\textcolor{keywordtype}{bool}\ stand));}
+\DoxyCodeLine{00019\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_hand_a7c310ceb965cddb4ad67fd0225eb4b54}{getFinished}},\ \textcolor{keywordtype}{bool}());}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

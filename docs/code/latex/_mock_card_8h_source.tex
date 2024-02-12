@@ -1,0 +1,23 @@
+\doxysection{Mock\+Card.\+h}
+\hypertarget{_mock_card_8h_source}{}\label{_mock_card_8h_source}\index{test/MockCard.h@{test/MockCard.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MOCKCARD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MOCKCARD\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Card.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mock_card}{MockCard}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_card}{Card}}\ \{}
+\DoxyCodeLine{00007\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_mock_card}{MockCard}}(Suit\ suit,\ Rank\ rank)\ \{\}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_mock_card}{MockCard}}()\ \{\}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_mock_card}{\string~MockCard}}()\ \{\}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_card_aa517965f79ea53240c9208bbe4ec86be}{getRank}},\ Rank());}
+\DoxyCodeLine{00013\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_card_a3df85ce283a6e38b719ffe25f3d4610a}{getValue}},\ \textcolor{keywordtype}{int}());}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00017\ }
+
+\end{DoxyCode}

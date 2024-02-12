@@ -1,0 +1,148 @@
+\doxysection{UI Class Reference}
+\hypertarget{class_u_i}{}\label{class_u_i}\index{UI@{UI}}
+Inheritance diagram for UI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_i}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_i_a3758f64499dc457d67987f2135ff91a5}{display\+Hand}} (\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}player)
+\item 
+virtual void \mbox{\hyperlink{class_u_i_ae69dbbea7af643a37de9c00b811f0b94}{display\+Winner}} (std\+::vector$<$ \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} $>$)
+\item 
+virtual void \mbox{\hyperlink{class_u_i_a97e6696064e998977122182123b94813}{display\+Bust}} (\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}player)
+\item 
+virtual void \mbox{\hyperlink{class_u_i_aacdf652542aa46f70792b7f33f2f8d32}{display\+Blackjack}} (\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}player)
+\item 
+virtual void \mbox{\hyperlink{class_u_i_a704f0074dafe3585f690641be6f32c7d}{display\+Score}} (\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}player)
+\item 
+virtual void \mbox{\hyperlink{class_u_i_a320032b9a434703d2753b25cd6aeaccf}{display\+Message}} (const std\+::string \&)
+\item 
+virtual void \mbox{\hyperlink{class_u_i_a416aaeaa838784a8bafdc0a85b917f48}{display\+New\+Shoe}} (const char \texorpdfstring{$\ast$}{*}message)
+\item 
+virtual void \mbox{\hyperlink{class_u_i_a970765d59bf579ffb5c85bc797d67c32}{game\+Menu}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_i_ae9c7a61a7960a618b841ef4823fdcab4}{split\+Menu}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_i_a492a00f5cc27e21fab4bbd812fb6c4ee}{help}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_i_ae7b3c0100a593e1ed9de84b2f809e13e}{invalid}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_u_i_a3fae166eb9e75e71b51bc76a92e146eb}{play\+Again}} ()
+\item 
+virtual int \mbox{\hyperlink{class_u_i_a84761a78a828383defe003c2c156de6a}{handle\+Input}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_i_aa0b96aa0c912104511c12f48005a5240}{open}} (const std\+::string \&f)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_i_aacdf652542aa46f70792b7f33f2f8d32}\label{class_u_i_aacdf652542aa46f70792b7f33f2f8d32} 
+\index{UI@{UI}!displayBlackjack@{displayBlackjack}}
+\index{displayBlackjack@{displayBlackjack}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{displayBlackjack()}{displayBlackjack()}}
+{\footnotesize\ttfamily void UI\+::display\+Blackjack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Display the \doxylink{class_blackjack}{Blackjack} message \Hypertarget{class_u_i_a97e6696064e998977122182123b94813}\label{class_u_i_a97e6696064e998977122182123b94813} 
+\index{UI@{UI}!displayBust@{displayBust}}
+\index{displayBust@{displayBust}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{displayBust()}{displayBust()}}
+{\footnotesize\ttfamily void UI\+::display\+Bust (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Display the busted message \Hypertarget{class_u_i_a3758f64499dc457d67987f2135ff91a5}\label{class_u_i_a3758f64499dc457d67987f2135ff91a5} 
+\index{UI@{UI}!displayHand@{displayHand}}
+\index{displayHand@{displayHand}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{displayHand()}{displayHand()}}
+{\footnotesize\ttfamily void UI\+::display\+Hand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Displays the hand of a player 
+\begin{DoxyParams}{Parameters}
+{\em player} & the player who owns the hand to be displayed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_i_a320032b9a434703d2753b25cd6aeaccf}\label{class_u_i_a320032b9a434703d2753b25cd6aeaccf} 
+\index{UI@{UI}!displayMessage@{displayMessage}}
+\index{displayMessage@{displayMessage}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{displayMessage()}{displayMessage()}}
+{\footnotesize\ttfamily void UI\+::display\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Display the player\textquotesingle{}s wins \Hypertarget{class_u_i_a416aaeaa838784a8bafdc0a85b917f48}\label{class_u_i_a416aaeaa838784a8bafdc0a85b917f48} 
+\index{UI@{UI}!displayNewShoe@{displayNewShoe}}
+\index{displayNewShoe@{displayNewShoe}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{displayNewShoe()}{displayNewShoe()}}
+{\footnotesize\ttfamily void UI\+::display\+New\+Shoe (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Display the player\textquotesingle{}s wins \Hypertarget{class_u_i_a704f0074dafe3585f690641be6f32c7d}\label{class_u_i_a704f0074dafe3585f690641be6f32c7d} 
+\index{UI@{UI}!displayScore@{displayScore}}
+\index{displayScore@{displayScore}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{displayScore()}{displayScore()}}
+{\footnotesize\ttfamily void UI\+::display\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Display the player\textquotesingle{}s wins \Hypertarget{class_u_i_ae69dbbea7af643a37de9c00b811f0b94}\label{class_u_i_ae69dbbea7af643a37de9c00b811f0b94} 
+\index{UI@{UI}!displayWinner@{displayWinner}}
+\index{displayWinner@{displayWinner}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{displayWinner()}{displayWinner()}}
+{\footnotesize\ttfamily void UI\+::display\+Winner (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} $>$}]{players }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Displays the winner(s) to the \doxylink{class_u_i}{UI} \Hypertarget{class_u_i_a970765d59bf579ffb5c85bc797d67c32}\label{class_u_i_a970765d59bf579ffb5c85bc797d67c32} 
+\index{UI@{UI}!gameMenu@{gameMenu}}
+\index{gameMenu@{gameMenu}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{gameMenu()}{gameMenu()}}
+{\footnotesize\ttfamily void UI\+::game\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Display the in-\/game menu to the player \Hypertarget{class_u_i_a84761a78a828383defe003c2c156de6a}\label{class_u_i_a84761a78a828383defe003c2c156de6a} 
+\index{UI@{UI}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily int UI\+::handle\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function which handles the input for a player during their turn \begin{DoxyReturn}{Returns}
+the choice of the player 
+\end{DoxyReturn}
+\Hypertarget{class_u_i_a492a00f5cc27e21fab4bbd812fb6c4ee}\label{class_u_i_a492a00f5cc27e21fab4bbd812fb6c4ee} 
+\index{UI@{UI}!help@{help}}
+\index{help@{help}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void UI\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Displays helpful information to the \doxylink{class_u_i}{UI} \Hypertarget{class_u_i_ae7b3c0100a593e1ed9de84b2f809e13e}\label{class_u_i_ae7b3c0100a593e1ed9de84b2f809e13e} 
+\index{UI@{UI}!invalid@{invalid}}
+\index{invalid@{invalid}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{invalid()}{invalid()}}
+{\footnotesize\ttfamily void UI\+::invalid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Inform the player of incorrect input \Hypertarget{class_u_i_aa0b96aa0c912104511c12f48005a5240}\label{class_u_i_aa0b96aa0c912104511c12f48005a5240} 
+\index{UI@{UI}!open@{open}}
+\index{open@{open}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily void UI\+::open (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Open a file and print out the contents. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em f} & the filename of the file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_i_a3fae166eb9e75e71b51bc76a92e146eb}\label{class_u_i_a3fae166eb9e75e71b51bc76a92e146eb} 
+\index{UI@{UI}!playAgain@{playAgain}}
+\index{playAgain@{playAgain}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{playAgain()}{playAgain()}}
+{\footnotesize\ttfamily bool UI\+::play\+Again (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Asks player if they want to play again \begin{DoxyReturn}{Returns}
+true \+: if Players choice is to play again, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_u_i_ae9c7a61a7960a618b841ef4823fdcab4}\label{class_u_i_ae9c7a61a7960a618b841ef4823fdcab4} 
+\index{UI@{UI}!splitMenu@{splitMenu}}
+\index{splitMenu@{splitMenu}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{splitMenu()}{splitMenu()}}
+{\footnotesize\ttfamily void UI\+::split\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Display the split menu to the player 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/UI.\+h\item 
+src/UI.\+cpp\end{DoxyCompactItemize}

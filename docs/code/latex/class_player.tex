@@ -1,0 +1,238 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_af5aaea393030f959d568c806ca9100ca}{Player}} (std\+::string name)
+\item 
+virtual \mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{\texorpdfstring{$\sim$}{\string~}\+Player}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85}{get\+Name}} () const
+\item 
+virtual void \mbox{\hyperlink{class_player_a6317f3497006526429577bca6873c306}{hit}} (\mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*}card)
+\item 
+virtual void \mbox{\hyperlink{class_player_a9877cd1487150eb1a2d072b4bb61ba7c}{split}} ()
+\item 
+virtual void \mbox{\hyperlink{class_player_aa157408d793fbee322137a8fe248d875}{stand}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_player_ad27cb27a6d73ea1df2824e64889ed7af}{is\+Bust}} ()
+\item 
+virtual void \mbox{\hyperlink{class_player_a2d8e08804b8480b1f9ac780b21ac4f49}{increment\+Score}} ()
+\item 
+virtual void \mbox{\hyperlink{class_player_a553484cd45b7dd661bca574eb9da16ae}{set\+Hand}} (int h)
+\item 
+virtual int \mbox{\hyperlink{class_player_a033117c9730db3840791042dcdaae105}{get\+Hand\+Index}} ()
+\item 
+virtual void \mbox{\hyperlink{class_player_accfc316d5967b216c3a01f20813b01e6}{set\+Hand\+Index}} (int i)
+\item 
+virtual bool \mbox{\hyperlink{class_player_aeee75bd9966998d389c786110333c3c3}{is\+Active}} ()
+\item 
+virtual void \mbox{\hyperlink{class_player_ade1f924a9406c442a732165c86c62b74}{set\+Active}} (bool a)
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_hand}{Hand}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_player_a70ac0a1fc0f9c2fd8299942040a86674}{get\+Hands}} ()
+\item 
+virtual \mbox{\hyperlink{class_hand}{Hand}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_player_a1a417d2a495039696de4dcbeaca2be21}{get\+Hand}} ()
+\item 
+virtual int \mbox{\hyperlink{class_player_a349e345c332c57d681982ce06a1ba7e9}{get\+Hand\+Size}} ()
+\item 
+virtual int \mbox{\hyperlink{class_player_a97fb00b9c30676c2d12cb9400f5a8fe7}{get\+Hand\+Score}} ()
+\item 
+virtual int \mbox{\hyperlink{class_player_a97e5447778ae6c384eedc532dcd8431d}{get\+Score}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_player_a7e396cceb4f120d93444d1fbeec79ac1}{is\+Blackjack}} ()
+\item 
+virtual void \mbox{\hyperlink{class_player_a264e28bf4f59a97d2181799df6eb0e52}{remove\+Hand}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_af5aaea393030f959d568c806ca9100ca}\label{class_player_af5aaea393030f959d568c806ca9100ca} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & \+: The player\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062} 
+\index{Player@{Player}!````~Player@{\texorpdfstring{$\sim$}{\string~}Player}}
+\index{````~Player@{\texorpdfstring{$\sim$}{\string~}Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Player()}{\string~Player()}}
+{\footnotesize\ttfamily Player\+::\texorpdfstring{$\sim$}{\string~}\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor for \doxylink{class_player}{Player} objects 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_a1a417d2a495039696de4dcbeaca2be21}\label{class_player_a1a417d2a495039696de4dcbeaca2be21} 
+\index{Player@{Player}!getHand@{getHand}}
+\index{getHand@{getHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHand()}{getHand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hand}{Hand}} \texorpdfstring{$\ast$}{*} Player\+::get\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Retrieves the \doxylink{class_hand}{Hand} the user has \begin{DoxyReturn}{Returns}
+Hand\texorpdfstring{$\ast$}{*} for players current \doxylink{class_hand}{Hand} 
+\end{DoxyReturn}
+\Hypertarget{class_player_a033117c9730db3840791042dcdaae105}\label{class_player_a033117c9730db3840791042dcdaae105} 
+\index{Player@{Player}!getHandIndex@{getHandIndex}}
+\index{getHandIndex@{getHandIndex}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHandIndex()}{getHandIndex()}}
+{\footnotesize\ttfamily int Player\+::get\+Hand\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Retrieve the index that points to which hand the user is using \begin{DoxyReturn}{Returns}
+Index for current hand 
+\end{DoxyReturn}
+\Hypertarget{class_player_a70ac0a1fc0f9c2fd8299942040a86674}\label{class_player_a70ac0a1fc0f9c2fd8299942040a86674} 
+\index{Player@{Player}!getHands@{getHands}}
+\index{getHands@{getHands}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHands()}{getHands()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_hand}{Hand}} \texorpdfstring{$\ast$}{*} $>$ Player\+::get\+Hands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Gets the players hands \begin{DoxyReturn}{Returns}
+a vector of the player\textquotesingle{}s current hands 
+\end{DoxyReturn}
+\Hypertarget{class_player_a97fb00b9c30676c2d12cb9400f5a8fe7}\label{class_player_a97fb00b9c30676c2d12cb9400f5a8fe7} 
+\index{Player@{Player}!getHandScore@{getHandScore}}
+\index{getHandScore@{getHandScore}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHandScore()}{getHandScore()}}
+{\footnotesize\ttfamily int Player\+::get\+Hand\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the score of the players current hand \begin{DoxyReturn}{Returns}
+Integer for the score of the current hand 
+\end{DoxyReturn}
+\Hypertarget{class_player_a349e345c332c57d681982ce06a1ba7e9}\label{class_player_a349e345c332c57d681982ce06a1ba7e9} 
+\index{Player@{Player}!getHandSize@{getHandSize}}
+\index{getHandSize@{getHandSize}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHandSize()}{getHandSize()}}
+{\footnotesize\ttfamily int Player\+::get\+Hand\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the size of the players current hand \begin{DoxyReturn}{Returns}
+Integer for the size of the current hand 
+\end{DoxyReturn}
+\Hypertarget{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85}\label{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85} 
+\index{Player@{Player}!getName@{getName}}
+\index{getName@{getName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Gets the player\textquotesingle{}s name \begin{DoxyReturn}{Returns}
+the player\textquotesingle{}s name 
+\end{DoxyReturn}
+\Hypertarget{class_player_a97e5447778ae6c384eedc532dcd8431d}\label{class_player_a97e5447778ae6c384eedc532dcd8431d} 
+\index{Player@{Player}!getScore@{getScore}}
+\index{getScore@{getScore}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int Player\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Gets the players score \begin{DoxyReturn}{Returns}
+an int of the player\textquotesingle{}s score 
+\end{DoxyReturn}
+\Hypertarget{class_player_a6317f3497006526429577bca6873c306}\label{class_player_a6317f3497006526429577bca6873c306} 
+\index{Player@{Player}!hit@{hit}}
+\index{hit@{hit}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{hit()}{hit()}}
+{\footnotesize\ttfamily void Player\+::hit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*}}]{card }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Make the player recieve a hit from the dealer 
+\begin{DoxyParams}{Parameters}
+{\em card} & \+: The card given to the player \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a2d8e08804b8480b1f9ac780b21ac4f49}\label{class_player_a2d8e08804b8480b1f9ac780b21ac4f49} 
+\index{Player@{Player}!incrementScore@{incrementScore}}
+\index{incrementScore@{incrementScore}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{incrementScore()}{incrementScore()}}
+{\footnotesize\ttfamily void Player\+::increment\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Increments the rounds won by the player \Hypertarget{class_player_aeee75bd9966998d389c786110333c3c3}\label{class_player_aeee75bd9966998d389c786110333c3c3} 
+\index{Player@{Player}!isActive@{isActive}}
+\index{isActive@{isActive}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily bool Player\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Retrieves the active status of the \doxylink{class_hand}{Hand} \begin{DoxyReturn}{Returns}
+the turn\+Is\+Active status, which is true if the the player still has non busted hands that the player has not stood 
+\end{DoxyReturn}
+\Hypertarget{class_player_a7e396cceb4f120d93444d1fbeec79ac1}\label{class_player_a7e396cceb4f120d93444d1fbeec79ac1} 
+\index{Player@{Player}!isBlackjack@{isBlackjack}}
+\index{isBlackjack@{isBlackjack}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{isBlackjack()}{isBlackjack()}}
+{\footnotesize\ttfamily bool Player\+::is\+Blackjack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns if the players current hand is a blackjack \begin{DoxyReturn}{Returns}
+True if it is blackjack, otherwise false 
+\end{DoxyReturn}
+\Hypertarget{class_player_ad27cb27a6d73ea1df2824e64889ed7af}\label{class_player_ad27cb27a6d73ea1df2824e64889ed7af} 
+\index{Player@{Player}!isBust@{isBust}}
+\index{isBust@{isBust}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{isBust()}{isBust()}}
+{\footnotesize\ttfamily bool Player\+::is\+Bust (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Checks if the player has gone bust \begin{DoxyReturn}{Returns}
+true if bust, else false 
+\end{DoxyReturn}
+\Hypertarget{class_player_a264e28bf4f59a97d2181799df6eb0e52}\label{class_player_a264e28bf4f59a97d2181799df6eb0e52} 
+\index{Player@{Player}!removeHand@{removeHand}}
+\index{removeHand@{removeHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeHand()}{removeHand()}}
+{\footnotesize\ttfamily void Player\+::remove\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Removes current hand from the players \Hypertarget{class_player_ade1f924a9406c442a732165c86c62b74}\label{class_player_ade1f924a9406c442a732165c86c62b74} 
+\index{Player@{Player}!setActive@{setActive}}
+\index{setActive@{setActive}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setActive()}{setActive()}}
+{\footnotesize\ttfamily void Player\+::set\+Active (\begin{DoxyParamCaption}\item[{bool}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the active status of a \doxylink{class_hand}{Hand} 
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: boolean corresponding to active status \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a553484cd45b7dd661bca574eb9da16ae}\label{class_player_a553484cd45b7dd661bca574eb9da16ae} 
+\index{Player@{Player}!setHand@{setHand}}
+\index{setHand@{setHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setHand()}{setHand()}}
+{\footnotesize\ttfamily void Player\+::set\+Hand (\begin{DoxyParamCaption}\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Changes which hand is the next used by player 
+\begin{DoxyParams}{Parameters}
+{\em int} & \+: integer to set the player hand \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_accfc316d5967b216c3a01f20813b01e6}\label{class_player_accfc316d5967b216c3a01f20813b01e6} 
+\index{Player@{Player}!setHandIndex@{setHandIndex}}
+\index{setHandIndex@{setHandIndex}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setHandIndex()}{setHandIndex()}}
+{\footnotesize\ttfamily void Player\+::set\+Hand\+Index (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the index of the current hand 
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: the index to set for the current hand \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a9877cd1487150eb1a2d072b4bb61ba7c}\label{class_player_a9877cd1487150eb1a2d072b4bb61ba7c} 
+\index{Player@{Player}!split@{split}}
+\index{split@{split}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily void Player\+::split (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Initiates a split on the player\textquotesingle{}s hand \Hypertarget{class_player_aa157408d793fbee322137a8fe248d875}\label{class_player_aa157408d793fbee322137a8fe248d875} 
+\index{Player@{Player}!stand@{stand}}
+\index{stand@{stand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{stand()}{stand()}}
+{\footnotesize\ttfamily void Player\+::stand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the current hand in play to stand status 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Player.\+h\item 
+src/Player.\+cpp\end{DoxyCompactItemize}

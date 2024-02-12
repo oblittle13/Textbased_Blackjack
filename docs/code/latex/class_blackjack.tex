@@ -1,0 +1,135 @@
+\doxysection{Blackjack Class Reference}
+\hypertarget{class_blackjack}{}\label{class_blackjack}\index{Blackjack@{Blackjack}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_blackjack_aa2b2f95b81e3318a865b78baefe8cad6}{Blackjack}} (std\+::vector$<$ \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} $>$ players, \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}dealer)
+\item 
+virtual \mbox{\hyperlink{class_blackjack_a9d03e5ac30d31ead7643d6794d8b8acd}{\texorpdfstring{$\sim$}{\string~}\+Blackjack}} ()
+\item 
+virtual void \mbox{\hyperlink{class_blackjack_aa3ae16a7371f375af807249b59227911}{play\+Game}} ()
+\item 
+virtual void \mbox{\hyperlink{class_blackjack_ad3763c9ebdf9b619b73d2fd833890821}{play\+Round}} ()
+\item 
+virtual void \mbox{\hyperlink{class_blackjack_a74970544c4ecbc8a63aa1a3b06db4010}{reset\+Round}} ()
+\item 
+virtual void \mbox{\hyperlink{class_blackjack_ae3ef2333b369a3f7b35d219ea037d165}{deal\+Card}} (\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}player)
+\item 
+virtual void \mbox{\hyperlink{class_blackjack_a3f013678ebfe1335e9b5ac21f3b709d0}{check\+Win}} ()
+\item 
+virtual void \mbox{\hyperlink{class_blackjack_a3912b07535639f2b795f8d1eb4ba1c43}{dealer\+Play}} ()
+\item 
+virtual void \mbox{\hyperlink{class_blackjack_ab423d22060e9e7c3072bca974540ce4b}{human\+Play}} ()
+\item 
+virtual void \mbox{\hyperlink{class_blackjack_a205803b45f998d3859778cf47af5e218}{computer\+Play}} ()
+\item 
+virtual void \mbox{\hyperlink{class_blackjack_ad4bc310f637234d85cd1837a3faef7e9}{set\+UI}} (\mbox{\hyperlink{class_u_i}{UI}} \texorpdfstring{$\ast$}{*}ui)
+\item 
+virtual void \mbox{\hyperlink{class_blackjack_a551554f7416f7966563a86981fb20675}{set\+Deck}} (\mbox{\hyperlink{class_deck}{Deck}} \texorpdfstring{$\ast$}{*}deck)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_blackjack_aa2b2f95b81e3318a865b78baefe8cad6}\label{class_blackjack_aa2b2f95b81e3318a865b78baefe8cad6} 
+\index{Blackjack@{Blackjack}!Blackjack@{Blackjack}}
+\index{Blackjack@{Blackjack}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{Blackjack()}{Blackjack()}}
+{\footnotesize\ttfamily Blackjack\+::\+Blackjack (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} $>$}]{players,  }\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{dealer }\end{DoxyParamCaption})}
+
+Create a \doxylink{class_blackjack}{Blackjack} object 
+\begin{DoxyParams}{Parameters}
+{\em players} & \+: Vector of \doxylink{class_player}{Player} pointers to Players who are playing the game \\
+\hline
+{\em dealer} & \+: \doxylink{class_player}{Player} pointer indicating the Dealer of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_blackjack_a9d03e5ac30d31ead7643d6794d8b8acd}\label{class_blackjack_a9d03e5ac30d31ead7643d6794d8b8acd} 
+\index{Blackjack@{Blackjack}!````~Blackjack@{\texorpdfstring{$\sim$}{\string~}Blackjack}}
+\index{````~Blackjack@{\texorpdfstring{$\sim$}{\string~}Blackjack}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Blackjack()}{\string~Blackjack()}}
+{\footnotesize\ttfamily virtual Blackjack\+::\texorpdfstring{$\sim$}{\string~}\+Blackjack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destructore for a \doxylink{class_blackjack}{Blackjack} object 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_blackjack_a3f013678ebfe1335e9b5ac21f3b709d0}\label{class_blackjack_a3f013678ebfe1335e9b5ac21f3b709d0} 
+\index{Blackjack@{Blackjack}!checkWin@{checkWin}}
+\index{checkWin@{checkWin}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{checkWin()}{checkWin()}}
+{\footnotesize\ttfamily void Blackjack\+::check\+Win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Check to see if the game has been won \Hypertarget{class_blackjack_a205803b45f998d3859778cf47af5e218}\label{class_blackjack_a205803b45f998d3859778cf47af5e218} 
+\index{Blackjack@{Blackjack}!computerPlay@{computerPlay}}
+\index{computerPlay@{computerPlay}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{computerPlay()}{computerPlay()}}
+{\footnotesize\ttfamily void Blackjack\+::computer\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Computer plays their turn \Hypertarget{class_blackjack_ae3ef2333b369a3f7b35d219ea037d165}\label{class_blackjack_ae3ef2333b369a3f7b35d219ea037d165} 
+\index{Blackjack@{Blackjack}!dealCard@{dealCard}}
+\index{dealCard@{dealCard}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{dealCard()}{dealCard()}}
+{\footnotesize\ttfamily void Blackjack\+::deal\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Deal a card to a specified player 
+\begin{DoxyParams}{Parameters}
+{\em player} & \+: The \doxylink{class_player}{Player} designated to recieve the dealt card \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_blackjack_a3912b07535639f2b795f8d1eb4ba1c43}\label{class_blackjack_a3912b07535639f2b795f8d1eb4ba1c43} 
+\index{Blackjack@{Blackjack}!dealerPlay@{dealerPlay}}
+\index{dealerPlay@{dealerPlay}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{dealerPlay()}{dealerPlay()}}
+{\footnotesize\ttfamily void Blackjack\+::dealer\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Dealer plays their turn \Hypertarget{class_blackjack_ab423d22060e9e7c3072bca974540ce4b}\label{class_blackjack_ab423d22060e9e7c3072bca974540ce4b} 
+\index{Blackjack@{Blackjack}!humanPlay@{humanPlay}}
+\index{humanPlay@{humanPlay}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{humanPlay()}{humanPlay()}}
+{\footnotesize\ttfamily void Blackjack\+::human\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\doxylink{class_human}{Human} plays their turn \Hypertarget{class_blackjack_aa3ae16a7371f375af807249b59227911}\label{class_blackjack_aa3ae16a7371f375af807249b59227911} 
+\index{Blackjack@{Blackjack}!playGame@{playGame}}
+\index{playGame@{playGame}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{playGame()}{playGame()}}
+{\footnotesize\ttfamily void Blackjack\+::play\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Start a game of blackjack \Hypertarget{class_blackjack_ad3763c9ebdf9b619b73d2fd833890821}\label{class_blackjack_ad3763c9ebdf9b619b73d2fd833890821} 
+\index{Blackjack@{Blackjack}!playRound@{playRound}}
+\index{playRound@{playRound}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{playRound()}{playRound()}}
+{\footnotesize\ttfamily void Blackjack\+::play\+Round (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Play a round of blackjack \Hypertarget{class_blackjack_a74970544c4ecbc8a63aa1a3b06db4010}\label{class_blackjack_a74970544c4ecbc8a63aa1a3b06db4010} 
+\index{Blackjack@{Blackjack}!resetRound@{resetRound}}
+\index{resetRound@{resetRound}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{resetRound()}{resetRound()}}
+{\footnotesize\ttfamily void Blackjack\+::reset\+Round (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reset the current round of blackjack to its default state \Hypertarget{class_blackjack_a551554f7416f7966563a86981fb20675}\label{class_blackjack_a551554f7416f7966563a86981fb20675} 
+\index{Blackjack@{Blackjack}!setDeck@{setDeck}}
+\index{setDeck@{setDeck}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{setDeck()}{setDeck()}}
+{\footnotesize\ttfamily void Blackjack\+::set\+Deck (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_deck}{Deck}} \texorpdfstring{$\ast$}{*}}]{deck }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the deck of cards that will be used for the game 
+\begin{DoxyParams}{Parameters}
+{\em deck} & \+: The deck of cards used for the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_blackjack_ad4bc310f637234d85cd1837a3faef7e9}\label{class_blackjack_ad4bc310f637234d85cd1837a3faef7e9} 
+\index{Blackjack@{Blackjack}!setUI@{setUI}}
+\index{setUI@{setUI}!Blackjack@{Blackjack}}
+\doxysubsubsection{\texorpdfstring{setUI()}{setUI()}}
+{\footnotesize\ttfamily void Blackjack\+::set\+UI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_u_i}{UI}} \texorpdfstring{$\ast$}{*}}]{ui }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Change the view for blackjack 
+\begin{DoxyParams}{Parameters}
+{\em ui} & \+: \doxylink{class_u_i}{UI} pointer that indicates the User interface to change to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Blackjack.\+h\item 
+src/Blackjack.\+cpp\end{DoxyCompactItemize}

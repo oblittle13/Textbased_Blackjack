@@ -1,0 +1,95 @@
+\doxysection{Deck Class Reference}
+\hypertarget{class_deck}{}\label{class_deck}\index{Deck@{Deck}}
+Inheritance diagram for Deck\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_deck}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_deck_aacfd6b77f4e71a92ac0d72efe396b4df}{Deck}} (std\+::vector$<$ \mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*} $>$ cards)
+\item 
+\mbox{\hyperlink{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}{Deck}} ()
+\item 
+virtual \mbox{\hyperlink{class_deck_a0455563eccd460a9ff84e74b858beb30}{\texorpdfstring{$\sim$}{\string~}\+Deck}} ()
+\item 
+virtual void \mbox{\hyperlink{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}{shuffle}} ()
+\item 
+virtual \mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_deck_a9074661e1f336e536a1d4ce76feced3a}{deal\+Card}} ()
+\item 
+virtual void \mbox{\hyperlink{class_deck_a0251bfdd3bb8fd58ee40b67429567dd9}{add\+Card}} (\mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*}card)
+\item 
+virtual bool \mbox{\hyperlink{class_deck_a0233c3d2ab48074ba0bb196d958d9dff}{is\+Empty}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_deck_aacfd6b77f4e71a92ac0d72efe396b4df}\label{class_deck_aacfd6b77f4e71a92ac0d72efe396b4df} 
+\index{Deck@{Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{Deck()}{Deck()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Deck\+::\+Deck (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*} $>$}]{cards }\end{DoxyParamCaption})}
+
+Create a \doxylink{class_deck}{Deck} object 
+\begin{DoxyParams}{Parameters}
+{\em cards} & \+: Vector of \doxylink{class_card}{Card} pointers to Cards that are in the deck \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}\label{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99} 
+\index{Deck@{Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{Deck()}{Deck()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Deck\+::\+Deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default \doxylink{class_deck}{Deck} object constructor \Hypertarget{class_deck_a0455563eccd460a9ff84e74b858beb30}\label{class_deck_a0455563eccd460a9ff84e74b858beb30} 
+\index{Deck@{Deck}!````~Deck@{\texorpdfstring{$\sim$}{\string~}Deck}}
+\index{````~Deck@{\texorpdfstring{$\sim$}{\string~}Deck}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Deck()}{\string~Deck()}}
+{\footnotesize\ttfamily virtual Deck\+::\texorpdfstring{$\sim$}{\string~}\+Deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destructor for \doxylink{class_deck}{Deck} objects 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_deck_a0251bfdd3bb8fd58ee40b67429567dd9}\label{class_deck_a0251bfdd3bb8fd58ee40b67429567dd9} 
+\index{Deck@{Deck}!addCard@{addCard}}
+\index{addCard@{addCard}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{addCard()}{addCard()}}
+{\footnotesize\ttfamily void Deck\+::add\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*}}]{card }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add a \doxylink{class_card}{Card} to the deck 
+\begin{DoxyParams}{Parameters}
+{\em card} & \+: The card being added \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_deck_a9074661e1f336e536a1d4ce76feced3a}\label{class_deck_a9074661e1f336e536a1d4ce76feced3a} 
+\index{Deck@{Deck}!dealCard@{dealCard}}
+\index{dealCard@{dealCard}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{dealCard()}{dealCard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*} Deck\+::deal\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return a random card from the deck to deal \begin{DoxyReturn}{Returns}
+The randomly picked card object 
+\end{DoxyReturn}
+\Hypertarget{class_deck_a0233c3d2ab48074ba0bb196d958d9dff}\label{class_deck_a0233c3d2ab48074ba0bb196d958d9dff} 
+\index{Deck@{Deck}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Deck\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Determines if the \doxylink{class_deck}{Deck} is empty \begin{DoxyReturn}{Returns}
+true if empty, otherwise false 
+\end{DoxyReturn}
+\Hypertarget{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}\label{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb} 
+\index{Deck@{Deck}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle()}{shuffle()}}
+{\footnotesize\ttfamily void Deck\+::shuffle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Randomize the order of the deck 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Deck.\+h\item 
+src/Deck.\+cpp\end{DoxyCompactItemize}

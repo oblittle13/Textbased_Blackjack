@@ -1,0 +1,33 @@
+\doxysection{Mock\+Player.\+h}
+\hypertarget{_mock_player_8h_source}{}\label{_mock_player_8h_source}\index{test/MockPlayer.h@{test/MockPlayer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MOCKPLAYER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MOCKPLAYER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Player.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mock_player}{MockPlayer}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_player}{Player}}\ \{}
+\DoxyCodeLine{00010\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_mock_player}{MockPlayer}}()\ \{\}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_mock_player}{\string~MockPlayer}}()\ \{\}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85}{getName}},\ std::string());}
+\DoxyCodeLine{00015\ \ \ \ \ MOCK\_METHOD1(\mbox{\hyperlink{class_player_a6317f3497006526429577bca6873c306}{hit}},\ \textcolor{keywordtype}{void}(\mbox{\hyperlink{class_card}{Card}}*));}
+\DoxyCodeLine{00016\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_player_a9877cd1487150eb1a2d072b4bb61ba7c}{split}},\ \textcolor{keywordtype}{void}());}
+\DoxyCodeLine{00017\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_player_aa157408d793fbee322137a8fe248d875}{stand}},\ \textcolor{keywordtype}{void}());}
+\DoxyCodeLine{00018\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_player_ad27cb27a6d73ea1df2824e64889ed7af}{isBust}},\ \textcolor{keywordtype}{bool}());}
+\DoxyCodeLine{00019\ \ \ \ \ MOCK\_METHOD0(getRoundsWon,\ \textcolor{keywordtype}{int}());}
+\DoxyCodeLine{00020\ \ \ \ \ MOCK\_METHOD0(winRound,\ \textcolor{keywordtype}{void}());}
+\DoxyCodeLine{00021\ \ \ \ \ MOCK\_METHOD0(getTurnIsActive,\ \textcolor{keywordtype}{bool}());}
+\DoxyCodeLine{00022\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_player_a1a417d2a495039696de4dcbeaca2be21}{getHand}},\ \mbox{\hyperlink{class_hand}{Hand}}*());}
+\DoxyCodeLine{00023\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_player_a70ac0a1fc0f9c2fd8299942040a86674}{getHands}},\ std::vector<Hand*>());}
+\DoxyCodeLine{00024\ \ \ \ \ MOCK\_METHOD0(\mbox{\hyperlink{class_player_a97e5447778ae6c384eedc532dcd8431d}{getScore}},\ \textcolor{keywordtype}{int}());}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,165 @@
+\doxysection{Hand Class Reference}
+\hypertarget{class_hand}{}\label{class_hand}\index{Hand@{Hand}}
+Inheritance diagram for Hand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hand}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hand_aa733faf150351c640fc7d1bf460b07e9}{Hand}} ()
+\item 
+\mbox{\hyperlink{class_hand_afb5ce3d55bcf06a64e00944066242e73}{Hand}} (std\+::vector$<$ \mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*} $>$ cards)
+\item 
+virtual \mbox{\hyperlink{class_hand_a6f907924e4d609201bf26a7e77e1c74f}{\texorpdfstring{$\sim$}{\string~}\+Hand}} ()
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_hand_a7bb91f29afecdeb1896423269bb9a546}{get\+Cards}} ()
+\item 
+virtual void \mbox{\hyperlink{class_hand_abc208a6484b462b95859fe0bb4812ce8}{add\+Card}} (\mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*}card)
+\item 
+virtual \mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_hand_afb089bf1b9f004f84e21fb9ae86f3d1c}{remove\+Card}} ()
+\item 
+virtual int \mbox{\hyperlink{class_hand_a273480acceedc23f7167e603f001710d}{get\+Score}} ()
+\item 
+virtual void \mbox{\hyperlink{class_hand_aa15f0ccd4287476b1c6604edffe799a4}{reset\+Hand}} ()
+\item 
+virtual void \mbox{\hyperlink{class_hand_a4e18d03b424ac10f825a29744f05a4ec}{set\+Score}} (int s)
+\item 
+virtual void \mbox{\hyperlink{class_hand_a63de2dc427d247846def7237d46d8c30}{set\+Finished}} (bool s)
+\item 
+virtual bool \mbox{\hyperlink{class_hand_a7c310ceb965cddb4ad67fd0225eb4b54}{get\+Finished}} ()
+\item 
+virtual int \mbox{\hyperlink{class_hand_abd15e5110f6a2f0809e2064c808a829c}{get\+Size}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_hand_ada8b2470b70bbd02af49b6439d93232a}{is\+Splittable}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_hand_aa733faf150351c640fc7d1bf460b07e9}\label{class_hand_aa733faf150351c640fc7d1bf460b07e9} 
+\index{Hand@{Hand}!Hand@{Hand}}
+\index{Hand@{Hand}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{Hand()}{Hand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Hand\+::\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default \doxylink{class_hand}{Hand} object constructor \Hypertarget{class_hand_afb5ce3d55bcf06a64e00944066242e73}\label{class_hand_afb5ce3d55bcf06a64e00944066242e73} 
+\index{Hand@{Hand}!Hand@{Hand}}
+\index{Hand@{Hand}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{Hand()}{Hand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Hand\+::\+Hand (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*} $>$}]{cards }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a \doxylink{class_hand}{Hand} object 
+\begin{DoxyParams}{Parameters}
+{\em cards} & vector of card pointers pointing to cards in the hand \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_hand_a6f907924e4d609201bf26a7e77e1c74f}\label{class_hand_a6f907924e4d609201bf26a7e77e1c74f} 
+\index{Hand@{Hand}!````~Hand@{\texorpdfstring{$\sim$}{\string~}Hand}}
+\index{````~Hand@{\texorpdfstring{$\sim$}{\string~}Hand}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Hand()}{\string~Hand()}}
+{\footnotesize\ttfamily virtual Hand\+::\texorpdfstring{$\sim$}{\string~}\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destructor for \doxylink{class_hand}{Hand} objects 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hand_abc208a6484b462b95859fe0bb4812ce8}\label{class_hand_abc208a6484b462b95859fe0bb4812ce8} 
+\index{Hand@{Hand}!addCard@{addCard}}
+\index{addCard@{addCard}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{addCard()}{addCard()}}
+{\footnotesize\ttfamily void Hand\+::add\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*}}]{card }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Adds a card to a hand 
+\begin{DoxyParams}{Parameters}
+{\em card} & a card pointer \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_hand_a7bb91f29afecdeb1896423269bb9a546}\label{class_hand_a7bb91f29afecdeb1896423269bb9a546} 
+\index{Hand@{Hand}!getCards@{getCards}}
+\index{getCards@{getCards}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{getCards()}{getCards()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*} $>$ Hand\+::get\+Cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Gets cards in a hand and returns them as a vector \begin{DoxyReturn}{Returns}
+a vector of cards 
+\end{DoxyReturn}
+\Hypertarget{class_hand_a7c310ceb965cddb4ad67fd0225eb4b54}\label{class_hand_a7c310ceb965cddb4ad67fd0225eb4b54} 
+\index{Hand@{Hand}!getFinished@{getFinished}}
+\index{getFinished@{getFinished}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{getFinished()}{getFinished()}}
+{\footnotesize\ttfamily bool Hand\+::get\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Gets the finished status of the hand \begin{DoxyReturn}{Returns}
+true if finished, otherwise false 
+\end{DoxyReturn}
+\Hypertarget{class_hand_a273480acceedc23f7167e603f001710d}\label{class_hand_a273480acceedc23f7167e603f001710d} 
+\index{Hand@{Hand}!getScore@{getScore}}
+\index{getScore@{getScore}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int Hand\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the score \begin{DoxyReturn}{Returns}
+the score as an integer 
+\end{DoxyReturn}
+\Hypertarget{class_hand_abd15e5110f6a2f0809e2064c808a829c}\label{class_hand_abd15e5110f6a2f0809e2064c808a829c} 
+\index{Hand@{Hand}!getSize@{getSize}}
+\index{getSize@{getSize}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Hand\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Gets the size of the hand \begin{DoxyReturn}{Returns}
+integer indicating size of the hand 
+\end{DoxyReturn}
+\Hypertarget{class_hand_ada8b2470b70bbd02af49b6439d93232a}\label{class_hand_ada8b2470b70bbd02af49b6439d93232a} 
+\index{Hand@{Hand}!isSplittable@{isSplittable}}
+\index{isSplittable@{isSplittable}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{isSplittable()}{isSplittable()}}
+{\footnotesize\ttfamily bool Hand\+::is\+Splittable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Is the hand splittable? \begin{DoxyReturn}{Returns}
+true if it is, otherwise false 
+\end{DoxyReturn}
+\Hypertarget{class_hand_afb089bf1b9f004f84e21fb9ae86f3d1c}\label{class_hand_afb089bf1b9f004f84e21fb9ae86f3d1c} 
+\index{Hand@{Hand}!removeCard@{removeCard}}
+\index{removeCard@{removeCard}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{removeCard()}{removeCard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*} Hand\+::remove\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Removes a card from the \doxylink{class_hand}{Hand}, and returns it \begin{DoxyReturn}{Returns}
+Card\texorpdfstring{$\ast$}{*} of card that was removed 
+\end{DoxyReturn}
+\Hypertarget{class_hand_aa15f0ccd4287476b1c6604edffe799a4}\label{class_hand_aa15f0ccd4287476b1c6604edffe799a4} 
+\index{Hand@{Hand}!resetHand@{resetHand}}
+\index{resetHand@{resetHand}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{resetHand()}{resetHand()}}
+{\footnotesize\ttfamily void Hand\+::reset\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Removes a card from the hand \Hypertarget{class_hand_a63de2dc427d247846def7237d46d8c30}\label{class_hand_a63de2dc427d247846def7237d46d8c30} 
+\index{Hand@{Hand}!setFinished@{setFinished}}
+\index{setFinished@{setFinished}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{setFinished()}{setFinished()}}
+{\footnotesize\ttfamily void Hand\+::set\+Finished (\begin{DoxyParamCaption}\item[{bool}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the hand to finished and not draw a card (when stand is called or the hand goes bust) 
+\begin{DoxyParams}{Parameters}
+{\em s} & bool for whether the hand is finished or not \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_hand_a4e18d03b424ac10f825a29744f05a4ec}\label{class_hand_a4e18d03b424ac10f825a29744f05a4ec} 
+\index{Hand@{Hand}!setScore@{setScore}}
+\index{setScore@{setScore}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily void Hand\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the score data member of the hand 
+\begin{DoxyParams}{Parameters}
+{\em s} & The integer to set the score to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Hand.\+h\item 
+src/Hand.\+cpp\end{DoxyCompactItemize}

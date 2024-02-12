@@ -1,0 +1,64 @@
+\doxysection{Card.\+h}
+\hypertarget{_card_8h_source}{}\label{_card_8h_source}\index{include/Card.h@{include/Card.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CARD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CARD\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{enum}\ Rank\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ ACE\ =\ 1,}
+\DoxyCodeLine{00009\ \ \ \ \ TWO,}
+\DoxyCodeLine{00010\ \ \ \ \ THREE,}
+\DoxyCodeLine{00011\ \ \ \ \ FOUR,}
+\DoxyCodeLine{00012\ \ \ \ \ FIVE,}
+\DoxyCodeLine{00013\ \ \ \ \ SIX,}
+\DoxyCodeLine{00014\ \ \ \ \ SEVEN,}
+\DoxyCodeLine{00015\ \ \ \ \ EIGHT,}
+\DoxyCodeLine{00016\ \ \ \ \ NINE,}
+\DoxyCodeLine{00017\ \ \ \ \ TEN,}
+\DoxyCodeLine{00018\ \ \ \ \ JACK,}
+\DoxyCodeLine{00019\ \ \ \ \ QUEEN,}
+\DoxyCodeLine{00020\ \ \ \ \ KING}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{enum}\ Suit\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ CLUB\ =\ 1,}
+\DoxyCodeLine{00028\ \ \ \ \ SPADE,}
+\DoxyCodeLine{00029\ \ \ \ \ HEART,}
+\DoxyCodeLine{00030\ \ \ \ \ DIAMOND}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_card}{Card}}\ \{}
+\DoxyCodeLine{00034\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_card_a783f5854cbe8c183ee3d4414c01472c0}{Card}}(Suit\ suit,\ Rank\ rank);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_card_a783f5854cbe8c183ee3d4414c01472c0}{Card}}()\ \{\}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_card_a2b09fd7321b238b45b2ad2f034760e5d}{\string~Card}}()\ \{\}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ Rank\ \mbox{\hyperlink{class_card_aa517965f79ea53240c9208bbe4ec86be}{getRank}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_card_a3df85ce283a6e38b719ffe25f3d4610a}{getValue}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_card_a3a963bc7ea73b73ebd3c64af3c594f93}{setAce}}(\textcolor{keywordtype}{bool}\ a);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_card_a573ca0c92e6c12cf8f932850631d9449}{isAce}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_card_a730fa7ecf1a8b4c72a25248cb5be1fb7}{setValue}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00088\ \ \ \ \ Suit\ \mbox{\hyperlink{class_card_a3b1a0b15ea942b878d6344a1287c5351}{getSuit}}();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_card_ac5d9065675e0da61d825670904d45181}{convertRank}}();}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_card_aa9291021617cd39162b9d245aa8ef184}{convertSuit}}();}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00103\ \ \ \ \ Suit\ suit;}
+\DoxyCodeLine{00104\ \ \ \ \ Rank\ rank;}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{int}\ value;}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{bool}\ ace;}
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
